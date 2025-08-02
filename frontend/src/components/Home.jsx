@@ -35,7 +35,7 @@ const Home = () => {
   const handleDelete = async (id) => {
     try {
       await axios.delete(`http://localhost:3001/delete/${id}`);
-      fetchBlogs(); // Refresh the list
+      fetchBlogs(); 
     } catch (error) {
       console.error("Error deleting blog:", error);
     }
